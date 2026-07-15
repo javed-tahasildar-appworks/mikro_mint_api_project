@@ -1,0 +1,9 @@
+version: "2"
+sql:
+  - schema: "./schemas/schema.sql"
+    queries: "./queries/customer_onboarding.sql"
+    engine: "postgresql"
+    gen:
+      go:
+        package: "queries"
+        out: "./queries/customer_onboarding"
